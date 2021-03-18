@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he" dir="rtl">
 
 <head>
   <!-- Meta -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <title></title>
+  <meta name="description" content="All Recycling">
+  <title>All Recycling — Homepage</title>
 
   <!-- Font -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Style (Vendor) -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
 
   <!-- Style -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
 
   <!-- Favicon -->
   <link rel="icon" href="img/favicon.png">
@@ -21,8 +26,952 @@
 
 <body>
 
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <!-- Logo -->
+      <div class="header-logo">
+        <img src="img/icons/logo.jpg" alt="all-recycling-logo">
+      </div>
+      <!-- Menu -->
+      <div class="header-menu">
+        <!-- Links -->
+        <div class="header-links f-d-2 f-m-5">
+          <ul>
+            <!-- Item -->
+            <li>
+              <a href="#">אודות</a>
+            </li>
+            <!-- Item -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggler">
+                השירותים שלנו
+                <img src="img/icons/plus-white.svg" alt="plus-icon" class="header-plus d-mobile">
+                <img src="img/icons/arrow-down-green.svg" alt="arrow-icon" class="header-arrow d-desktop">
+              </a>
+              <ul class="dropdown-menu">
+                <!-- Item -->
+                <li>
+                  <a href="#">עיתוי פרישת הציוד לגימלאות</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">עיתוי פרישת הציוד לגימלאות</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">עיתוי פרישת הציוד לגימלאות</a>
+                </li>
+              </ul>
+            </li>
+            <!-- Item -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggler">
+                תרומה לקהילה
+                <img src="img/icons/plus-white.svg" alt="plus-icon" class="header-plus d-mobile">
+                <img src="img/icons/arrow-down-green.svg" alt="arrow-icon" class="header-arrow d-desktop">
+              </a>
+              <ul class="dropdown-menu">
+                <!-- Item -->
+                <li>
+                  <a href="#">עיתוי פרישת הציוד לגימלאות</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">עיתוי פרישת הציוד לגימלאות</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">עיתוי פרישת הציוד לגימלאות</a>
+                </li>
+              </ul>
+            </li>
+            <!-- Item -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggler">
+                מיחזור וסביבה
+                <img src="img/icons/plus-white.svg" alt="plus-icon" class="header-plus d-mobile">
+                <img src="img/icons/arrow-down-green.svg" alt="arrow-icon" class="header-arrow d-desktop">
+              </a>
+              <ul class="dropdown-menu">
+                <!-- Item -->
+                <li>
+                  <a href="#">עיתוי פרישת הציוד לגימלאות</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">עיתוי פרישת הציוד לגימלאות</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">עיתוי פרישת הציוד לגימלאות</a>
+                </li>
+              </ul>
+            </li>
+            <!-- Item -->
+            <li>
+              <a href="#">אירועים וחדשות</a>
+            </li>
+            <!-- Item -->
+            <li>
+              <a href="#">צור קשר</a>
+            </li>
+            <!-- Item -->
+            <li class="dropdown d-desktop">
+              <a href="#" class="dropdown-toggler">ENG</a>
+              <ul class="dropdown-menu">
+                <!-- Item -->
+                <li>
+                  <a href="#">ENG</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">HE</a>
+                </li>
+              </ul>
+            </li>
+            <!-- Item -->
+            <li class="d-desktop">
+              <a href="#"><img src="img/icons/search-black.svg" alt="search-icon" class="header-search"></a>
+            </li>
+          </ul>
+        </div>
+        <!-- Social -->
+        <div class="header-social d-mobile">
+          <ul>
+            <!-- Item -->
+            <li>
+              <a href="#"><img src="img/icons/whatsapp-white.svg" alt="whatsapp-icon"></a>
+            </li>
+            <!-- Item -->
+            <li>
+              <a href="#"><img src="img/icons/instagram-white.svg" alt="instagram-icon"></a>
+            </li>
+            <!-- Item -->
+            <li>
+              <a href="#"><img src="img/icons/facebook-white.svg" alt="facebook-icon"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Contact -->
+      <div class="header-contact f-d-4 f-m-1">
+        <a href="#" class="white">
+          <img src="img/icons/phone-green.svg" alt="phone-icon">
+          <span class="d-desktop">
+            לפרטים חייגו
+            <br>073-2633382
+          </span>
+        </a>
+        <a href="#" class="green">
+          <span>
+            בקשה לאיסוף
+            <br>פסולת אלקטרונית
+          </span>
+          <img src="img/icons/truck-white.svg" alt="truck-icon">
+        </a>
+      </div>
+      <!-- Hamburger -->
+      <div class="header-hamburger d-mobile">
+        <button class="hamburger hamburger--slider" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <div class="banner banner-slider">
+    <!-- Slider -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- Slide -->
+        <div class="swiper-slide">
+          <!-- Text -->
+          <div class="container">
+            <div class="text">
+              <h1 class="f-d-9 f-m-6 medium underline">
+                החברות היחידות בארץ
+                <br>אשר רוכשות את ציוד המחשוב
+              </h1>
+              <p class="f-d-4 f-m-3">
+                ציוד המחשבים הישן, הופך ברובו לפסולת אלקטרונית. פסולת זו הינה
+                <br>רעילה ומסוכנת ביותר אשר גוררת בתוכה גם עלויות רבות ללקוח – כגון
+                <br>.אחסון וניהול המלאי
+              </p>
+              <a href="#" class="btn btn-primary">לפרטים נוספים <img src="img/icons/arrow-left-white.svg"
+                  alt="arrow-icon"></a>
+            </div>
+          </div>
+          <!-- Bg -->
+          <div class="bg">
+            <picture>
+              <source media="(min-width:1024px)" srcset="img/home/banner.jpg">
+              <img src="img/home/banner-mobile.jpg" alt="banner-img">
+            </picture>
+          </div>
+        </div>
+        <!-- Slide -->
+        <div class="swiper-slide">
+          <!-- Text -->
+          <div class="container">
+            <div class="text">
+              <h1 class="f-d-9 f-m-6 medium underline">
+                החברות היחידות בארץ
+                <br>אשר רוכשות את ציוד המחשוב
+              </h1>
+              <p class="f-d-4 f-m-3">
+                ציוד המחשבים הישן, הופך ברובו לפסולת אלקטרונית. פסולת זו הינה
+                <br>רעילה ומסוכנת ביותר אשר גוררת בתוכה גם עלויות רבות ללקוח – כגון
+                <br>.אחסון וניהול המלאי
+              </p>
+              <a href="#" class="btn btn-primary">לפרטים נוספים <img src="img/icons/arrow-left-white.svg"
+                  alt="arrow-icon"></a>
+            </div>
+          </div>
+          <!-- Bg -->
+          <div class="bg">
+            <picture>
+              <source media="(min-width:1024px)" srcset="img/home/banner.jpg">
+              <img src="img/home/banner-mobile.jpg" alt="banner-img">
+            </picture>
+          </div>
+        </div>
+        <!-- Slide -->
+        <div class="swiper-slide">
+          <!-- Text -->
+          <div class="container">
+            <div class="text">
+              <h1 class="f-d-9 f-m-6 medium underline">
+                החברות היחידות בארץ
+                <br>אשר רוכשות את ציוד המחשוב
+              </h1>
+              <p class="f-d-4 f-m-3">
+                ציוד המחשבים הישן, הופך ברובו לפסולת אלקטרונית. פסולת זו הינה
+                <br>רעילה ומסוכנת ביותר אשר גוררת בתוכה גם עלויות רבות ללקוח – כגון
+                <br>.אחסון וניהול המלאי
+              </p>
+              <a href="#" class="btn btn-primary">לפרטים נוספים <img src="img/icons/arrow-left-white.svg"
+                  alt="arrow-icon"></a>
+            </div>
+          </div>
+          <!-- Bg -->
+          <div class="bg">
+            <picture>
+              <source media="(min-width:1024px)" srcset="img/home/banner.jpg">
+              <img src="img/home/banner-mobile.jpg" alt="banner-img">
+            </picture>
+          </div>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- Arrow -->
+    <a href="#" class="banner-arrow d-desktop">
+      <span class="f-d-2">גלו עוד</span>
+      <img src="img/icons/arrow-down-long-white.svg" alt="arrow-icon">
+    </a>
+  </div>
+
+  <!-- Sticky -->
+  <div class="banner-sticky f-d-2 f-m-2">
+    <p>
+      <a href="#">
+        מי אנחנו
+      </a>
+      <a href="#">
+        חזון ומטרות
+      </a>
+      <a href="#">
+        הסטוריה
+      </a>
+      <a href="#">
+        הנהלה
+      </a>
+      <a href="#">
+        חברות מייסדות
+      </a>
+    </p>
+  </div>
+
+  <!-- Banner -->
+  <!-- <div class="banner"> -->
+  <!-- Text -->
+  <!-- <div class="container">
+      <div class="text">
+        <h1 class="f-d-9 f-m-6 medium">All Recycling אודות</h1>
+        <p class="f-d-4 f-m-3"> הינה מבין החברות היחידות בארץ אשר רוכשות את All Recycling
+          <br>ציוד המחשוב ההיקפי המשומש ועושה בו שימוש אחר, בין אם שדרוגו
+          <br>ומכירתו ללקוחותיה ובין אם מיחזורו כפסולת אלקטרונית לפי התקנים
+          <br>.המחמירים ביותר</p>
+      </div>
+    </div> -->
+  <!-- Arrow -->
+  <!-- <a href="#" class="banner-arrow d-desktop">
+      <span class="f-d-2">גלו עוד</span>
+      <img src="img/icons/arrow-down-long-white.svg" alt="arrow-icon">
+    </a> -->
+  <!-- Bg -->
+  <!-- <div class="bg">
+      <picture>
+        <source media="(min-width:1024px)" srcset="img/home/banner.jpg">
+        <img src="img/home/banner-mobile.jpg" alt="banner-img">
+      </picture>
+    </div>
+  </div> -->
+
+  <!-- Solutions -->
+  <div class="home-solutions">
+    <div class="container">
+      <!-- Text -->
+      <div class="text">
+        <p class="f-d-5 f-m-3 text-green">פתרונות החברה</p>
+        <h2 class="f-d-8 f-m-6 regular underline-center">All Recycling</h2>
+        <p class="f-d-3 f-m-2">
+          מציעה פתרונות רבים ומגוונים בכל תחום הטיפול פסולת האלקטרונית, המאפשרים לה לספק פיתרון כולל מקצה לקצה All
+          Recycling
+          <br>.בתחומי הייעוץ, השינוע, הלוגיסטיקה, המיון, החידוש, ההשמדה ומיחזור הפסולת האלקטרונית
+        </p>
+      </div>
+      <!-- Cards -->
+      <div class="cards">
+        <ul>
+          <!-- Item -->
+          <li class="card">
+            <div class="bg"><img src="img/home/solutions-1.jpg" alt="solutions-img"></div>
+            <div class="card-body">
+              <h3 class="f-d-7 f-m-3 regular">
+                מפעל למיחזור
+                <br>מתכות על ברזליות
+                <br>(סוגי מתכות)</h3>
+              <p class="f-d-3 f-m-1">All Recycling השתתפה בכנס תעשיות המחזור ה-2 בפארק המיחזור חירייה</p>
+              <a href="#" class="btn btn-tertiary">
+                לפרטים נוספים
+                <img src="img/icons/arrow-left-white.svg" alt="arrow-icon">
+              </a>
+            </div>
+          </li>
+          <!-- Item -->
+          <li class="card card-large">
+            <div class="bg"><img src="img/home/solutions-2.jpg" alt="solutions-img"></div>
+            <div class="card-body">
+              <h3 class="f-d-7 f-m-3 regular">
+                SDA
+                <br>מפעל למיחזור
+                <br>פסולת אלקטרונית</h3>
+              <p class="f-d-3 f-m-1">All Recycling השתתפה בכנס תעשיות המחזור ה-2 בפארק המיחזור חירייה</p>
+              <a href="#" class="btn btn-tertiary">
+                לפרטים נוספים
+                <img src="img/icons/arrow-left-white.svg" alt="arrow-icon">
+              </a>
+            </div>
+          </li>
+          <!-- Item -->
+          <li class="card">
+            <div class="bg"><img src="img/home/solutions-3.jpg" alt="solutions-img"></div>
+            <div class="card-body">
+              <h3 class="f-d-7 f-m-3 regular">
+                LDA
+                <br>מפעל למיחזור
+                <br>מקררים ומזגנים</h3>
+              <p class="f-d-3 f-m-1">All Recycling השתתפה בכנס תעשיות המחזור ה-2 בפארק המיחזור חירייה</p>
+              <a href="#" class="btn btn-tertiary">
+                לפרטים נוספים
+                <img src="img/icons/arrow-left-white.svg" alt="arrow-icon">
+              </a>
+            </div>
+            <div class="card-banner f-d-3 f-m-1 bold"> בקרוב</div>
+          </li>
+        </ul>
+      </div>
+      <!-- Swiper -->
+      <div class="swiper">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="img">
+                  <img src="img/home/solutions-4.jpg" alt="solutions-img">
+                </div>
+                <div class="card-body">
+                  <h3 class="f-d-6 f-m-3 regular">ITAD שירותי</h3>
+                  <p class="f-d-3 f-m-2">All Recycling השתתפה בכנס תעשיות המחזור ה-2 בפארק המיחזור חירייה</p>
+                  <a href="#" class="btn btn-tertiary">
+                    לפרטים נוספים
+                    <img src="img/icons/arrow-left-white.svg" alt="arrow-icon">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="img">
+                  <img src="img/home/solutions-5.jpg" alt="solutions-img">
+                </div>
+                <div class="card-body">
+                  <h3 class="f-d-6 f-m-3 regular">פירוק מפעלים ותשתיות</h3>
+                  <p class="f-d-3 f-m-2">All Recycling השתתפה בכנס תעשיות המחזור ה-2 בפארק המיחזור חירייה</p>
+                  <a href="#" class="btn btn-tertiary">
+                    לפרטים נוספים
+                    <img src="img/icons/arrow-left-white.svg" alt="arrow-icon">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="img">
+                  <img src="img/home/solutions-6.jpg" alt="solutions-img">
+                </div>
+                <div class="card-body">
+                  <h3 class="f-d-6 f-m-3 regular">גריסת השמדה מידע ומותג</h3>
+                  <p class="f-d-3 f-m-2">All Recycling השתתפה בכנס תעשיות המחזור ה-2 בפארק המיחזור חירייה</p>
+                  <a href="#" class="btn btn-tertiary">
+                    לפרטים נוספים
+                    <img src="img/icons/arrow-left-white.svg" alt="arrow-icon">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Form -->
+  <div class="contact-form">
+    <!-- Text -->
+    <div class="container">
+      <h2 class="f-d-8 f-m-6 regular d-desktop">בקשה לאיסוף פסולת אלקטרונית</h2>
+      <h2 class="f-d-8 f-m-6 regular d-mobile">לאיסוף פסולת אלקטרונית
+        <br>מלאו את הפרטים הבאים
+        <br>או חייגו 073-2633382
+      </h2>
+      <form>
+        <div class="row f-d-3 f-m-2">
+          <input type="text" placeholder="שם מלא">
+          <input type="text" placeholder="כתובת מייל">
+          <input type="text" placeholder="טלפון">
+          <select>
+            <option value="1">נושא</option>
+            <option value="2">נושא</option>
+          </select>
+        </div>
+        <div class="row">
+          <label class="checkbox f-d-3 f-m-2">
+            ברצוני לקבל עדכונים, חדשות ומבצעים
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+          </label>
+          <button type="submit" class="btn btn-secondary">
+            שלחו <img src="img/icons/arrow-left-green.svg" alt="arrow-icon">
+          </button>
+        </div>
+      </form>
+    </div>
+    <!-- Bg -->
+    <div class="bg">
+      <img src="img/global/contact-form-bg.jpg" alt="contact-form-bg-img">
+    </div>
+  </div>
+
+  <!-- Recycling -->
+  <div class="home-recycling">
+    <div class="container">
+      <!-- Text -->
+      <div class="text">
+        <h2 class="f-d-8 f-m-6 regular underline"> מיחזור פסולת אלקטרונית
+          <br>Allrecycling</h2>
+        <p class="f-d-3 f-m-2">לורם איפסום דולור סיט אמט, להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי
+          <br>מנורךגולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ, ושבעגט. קולורס
+          <br>.מונפרד אדנדום סילקוף, מרגשי ומרגשח,</p>
+      </div>
+      <!-- Video -->
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/aQxPjPweWNY" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Advantage -->
+  <div class="home-advantage">
+    <div class="container">
+      <!-- Text -->
+      <div class="text">
+        <h2 class="f-d-8 f-m-6 regular underline">
+          יתרונות שלנו
+        </h2>
+        <p class="f-d-3 f-m-2">
+          All Recycling מציעה פתרונות רבים ומגוונים בכל
+          תחום הטיפול פסולת האלקטרונית, המאפשרים לה
+          ,לספק פיתרון כולל מקצה לקצה, בתחומי הייעוץ
+          השינוע, הלוגיסטיקה, המיון, החידוש, ההשמדה
+          .ומיחזור הפסולת האלקטרונית
+          <br><br>
+          תפחיתו את הסיכון באופןAll Recycling  בבחירת 
+          משמעותי, בכך שתבחרו בחברה שבאפשרותה
+          לספק לכם פתרון רחב וכולל בכל תחום הטיפול
+          והאלקטרוניקה של הארגון או העסקIT  בציוד ה 
+          .שלכם
+        </p>
+        <div class="d-desktop">
+          <a href="#" class="btn btn-tertiary">
+            התחילו למחזר <img src="img/icons/arrow-left-white.svg" alt="arrow-icon">
+          </a>
+        </div>
+      </div>
+      <!-- Img -->
+      <div class="img">
+        <ul>
+          <!-- Item -->
+          <li>
+            <div class="img">
+              <img src="img/home/advantage-icon-1.png" alt="advantage-icon">
+            </div>
+            <div class="text">
+              <h3 class="f-d-3 f-m-2 medium">יכולות סביביתיות</h3>
+              <p class="f-d-1 f-m-2 collapse active">
+                מוכחות המשלבות חידוש ומיחזור  פסולת אלקטרונית מוכחות המשלבות חידוש ומיחזור  פסולת אלקטרונית 
+              </p>
+              <a href="#" class="collapse-toggler active">
+                <span class="more">
+                  להצג עוד
+                </span>
+                <span class="less">
+                  סגור
+                </span>
+                <img src="img/icons/plus-green.svg" alt="plus-icon">
+              </a>
+            </div>
+          </li>
+          <!-- Item -->
+          <li>
+            <div class="img">
+              <img src="img/home/advantage-icon-2.png" alt="advantage-icon">
+            </div>
+            <div class="text">
+              <h3 class="f-d-3 f-m-2 medium">תהליך מבוקר, מתועד</h3>
+              <p class="f-d-1 f-m-2 collapse">
+                מוכחות המשלבות חידוש ומיחזור  פסולת אלקטרונית מוכחות המשלבות חידוש ומיחזור  פסולת אלקטרונית 
+              </p>
+              <a href="#" class="collapse-toggler">
+                <span class="more">
+                  להצג עוד
+                </span>
+                <span class="less">
+                  סגור
+                </span>
+                <img src="img/icons/plus-green.svg" alt="plus-icon">
+              </a>
+            </div>
+          </li>
+          <!-- Item -->
+          <li>
+            <div class="img">
+              <img src="img/home/advantage-icon-3.png" alt="advantage-icon">
+            </div>
+            <div class="text">
+              <h3 class="f-d-3 f-m-2 medium">ניסיון</h3>
+              <p class="f-d-1 f-m-2 collapse">
+                מוכחות המשלבות חידוש ומיחזור  פסולת אלקטרונית מוכחות המשלבות חידוש ומיחזור  פסולת אלקטרונית 
+              </p>
+              <a href="#" class="collapse-toggler">
+                <span class="more">
+                  להצג עוד
+                </span>
+                <span class="less">
+                  סגור
+                </span>
+                <img src="img/icons/plus-green.svg" alt="plus-icon">
+              </a>
+            </div>
+          </li>
+          <!-- Item -->
+          <li>
+            <div class="img">
+              <img src="img/home/advantage-icon-4.png" alt="advantage-icon">
+            </div>
+            <div class="text">
+              <h3 class="f-d-3 f-m-2 medium">WEEE מוסמכי</h3>
+              <p class="f-d-1 f-m-2 collapse">
+                מוכחות המשלבות חידוש ומיחזור  פסולת אלקטרונית מוכחות המשלבות חידוש ומיחזור  פסולת אלקטרונית 
+              </p>
+              <a href="#" class="collapse-toggler">
+                <span class="more">
+                  להצג עוד
+                </span>
+                <span class="less">
+                  סגור
+                </span>
+                <img src="img/icons/plus-green.svg" alt="plus-icon">
+              </a>
+            </div>
+          </li>
+          <!-- Item -->
+          <li>
+            <div class="img">
+              <img src="img/home/advantage-icon-5.png" alt="advantage-icon">
+            </div>
+            <div class="text">
+              <h3 class="f-d-3 f-m-2 medium">קו ייצור אוטומטי מתקדם</h3>
+              <p class="f-d-1 f-m-2 collapse">
+                מוכחות המשלבות חידוש ומיחזור  פסולת אלקטרונית מוכחות המשלבות חידוש ומיחזור  פסולת אלקטרונית 
+              </p>
+              <a href="#" class="collapse-toggler">
+                <span class="more">
+                  להצג עוד
+                </span>
+                <span class="less">
+                  סגור
+                </span>
+                <img src="img/icons/plus-green.svg" alt="plus-icon">
+              </a>
+            </div>
+          </li>
+          <!-- Item -->
+          <li>
+            <div class="img">
+              <img src="img/home/advantage-icon-6.png" alt="advantage-icon">
+            </div>
+            <div class="text">
+              <h3 class="f-d-3 f-m-2 medium">טיפול אחראי בהתאם</h3>
+              <p class="f-d-1 f-m-2 collapse">
+                מוכחות המשלבות חידוש ומיחזור  פסולת אלקטרונית מוכחות המשלבות חידוש ומיחזור  פסולת אלקטרונית 
+              </p>
+              <a href="#" class="collapse-toggler">
+                <span class="more">
+                  להצג עוד
+                </span>
+                <span class="less">
+                  סגור
+                </span>
+                <img src="img/icons/plus-green.svg" alt="plus-icon">
+              </a>
+            </div>
+          </li>
+          <!-- Item -->
+          <li>
+            <div class="img">
+              <img src="img/home/advantage-icon-7.png" alt="advantage-icon">
+            </div>
+            <div class="text">
+              <h3 class="f-d-3 f-m-2 medium">מיון, חידוש ומיחזור</h3>
+              <p class="f-d-1 f-m-2 collapse">
+                מוכחות המשלבות חידוש ומיחזור  פסולת אלקטרונית מוכחות המשלבות חידוש ומיחזור  פסולת אלקטרונית 
+              </p>
+              <a href="#" class="collapse-toggler">
+                <span class="more">
+                  להצג עוד
+                </span>
+                <span class="less">
+                  סגור
+                </span>
+                <img src="img/icons/plus-green.svg" alt="plus-icon">
+              </a>
+            </div>
+          </li>
+          <!-- Item -->
+          <li>
+            <a href="#" class="f-d-1 f-m-2">להציג עוד יתרונות <span class="text-green">>></span></a>
+          </li>
+        </ul>
+      </div>
+      <!-- Mobile Btn -->
+      <div class="d-mobile text-center">
+        <a href="#" class="btn btn-tertiary">
+          התחילו למחזר <img src="img/icons/arrow-left-white.svg" alt="arrow-icon">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Process -->
+  <div class="home-process">
+    <div class="container">
+      <!-- Text -->
+      <div class="text">
+        <h2 class="f-d-8 f-m-6 regular underline-center">
+          תהליך מיחזור פסולת אלקטרונית
+        </h2>
+        <p class="f-d-3 f-m-2">
+          :החלטתם להיות ידידותיים לסביבה ולמחזר את ציוד המיחשוב הישן באירגון ? חשוב שתדעו
+          <br><br>
+          מלא במסגרתו כלל השלבים מבוצעים ומפוקחים על ידינו (ללא קבלני משנה) –End 2End חברתנו מציעה תהליך
+          <br>.עובדה המבטיחה הקטנת הסיכונים בתהליך וביצועו תחת קורת גג אחת, במתחם ייחודי, המתקדם ביותר במזה"ת, הנבנה
+          לשרתכם ולספק לכם פיתרון מלא
+        </p>
+      </div>
+      <!-- Img -->
+      <div class="img">
+        <picture>
+          <source media="(min-width:1024px)" srcset="img/home/process.jpg">
+          <img src="img/home/process-mobile.jpg" alt="process-img">
+        </picture>
+      </div>
+    </div>
+  </div>
+
+  <!-- Clients -->
+  <div class="clients">
+    <div class="container">
+      <h2 class="f-d-8 f-m-6 underline-center regular">לקוחות מובילים של החברה</h2>
+      <p class="f-d-3 f-m-2">תפחיתו את הסיכון באופן משמעותי, בכך שתבחרו בחברה שבאפשרותה לספק לכם All Recycling בבחירת
+        <br>.והאלקטרוניקה של הארגון או העסק שלכם IT פתרון רחב וכולל בכל תחום הטיפול בציוד ה</p>
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Slide -->
+          <div class="swiper-slide">
+            <img src="img/global/client-logo-1.jpg" alt="client-logo-img">
+          </div>
+          <!-- Slide -->
+          <div class="swiper-slide">
+            <img src="img/global/client-logo-2.jpg" alt="client-logo-img">
+          </div>
+          <!-- Slide -->
+          <div class="swiper-slide">
+            <img src="img/global/client-logo-3.jpg" alt="client-logo-img">
+          </div>
+          <!-- Slide -->
+          <div class="swiper-slide">
+            <img src="img/global/client-logo-4.jpg" alt="client-logo-img">
+          </div>
+          <!-- Slide -->
+          <div class="swiper-slide">
+            <img src="img/global/client-logo-5.jpg" alt="client-logo-img">
+          </div>
+          <!-- Slide -->
+          <div class="swiper-slide">
+            <img src="img/global/client-logo-6.jpg" alt="client-logo-img">
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Blog Posts -->
+  <div class="blog-posts">
+    <div class="container">
+      <h2 class="f-d-8 f-m-6 underline-center regular">אולי יעניין אותכם</h2>
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Slide -->
+          <div class="swiper-slide">
+            <img src="img/global/blog-post-1.jpg" alt="blog-post-img">
+            <h3 class="f-d-6 f-m-2 underline-center regular">מיחזור לדילרים</h3>
+            <p class="f-d-3 f-m-2">קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף
+              לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו </p>
+          </div>
+          <!-- Slide -->
+          <div class="swiper-slide">
+            <img src="img/global/blog-post-2.jpg" alt="blog-post-img">
+            <h3 class="f-d-6 f-m-2 underline-center regular">מיחזור פסולת אלקטרונית לעיריות</h3>
+            <p class="f-d-3 f-m-2">קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף
+              לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו </p>
+          </div>
+          <!-- Slide -->
+          <div class="swiper-slide">
+            <img src="img/global/blog-post-3.jpg" alt="blog-post-img">
+            <h3 class="f-d-6 f-m-2 underline-center regular">חקיקה ורגולציה</h3>
+            <p class="f-d-3 f-m-2">קישורים חשובים בתחום החקיקה והרגולציה בתחום של מיחזור פסולת אלקטרונית</p>
+          </div>
+          <!-- Slide -->
+          <div class="swiper-slide">
+            <img src="img/global/blog-post-1.jpg" alt="blog-post-img">
+            <h3 class="f-d-6 f-m-2 underline-center regular">מיחזור לדילרים</h3>
+            <p class="f-d-3 f-m-2">קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף
+              לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו </p>
+          </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Form -->
+  <div class="contact-form">
+    <!-- Text -->
+    <div class="container">
+      <h2 class="f-d-8 f-m-6 regular">צור קשר</h2>
+      <form>
+        <div class="row f-d-3 f-m-2">
+          <input type="text" placeholder="שם מלא">
+          <input type="text" placeholder="כתובת מייל">
+          <input type="text" placeholder="טלפון">
+          <select>
+            <option value="1">נושא</option>
+            <option value="2">נושא</option>
+          </select>
+        </div>
+        <div class="row">
+          <label class="checkbox f-d-3 f-m-2">
+            ברצוני לקבל עדכונים, חדשות ומבצעים
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+          </label>
+          <button type="submit" class="btn btn-tertiary">
+            שלחו <img src="img/icons/arrow-left-white.svg" alt="arrow-icon">
+          </button>
+        </div>
+      </form>
+    </div>
+    <!-- Bg -->
+    <div class="bg">
+      <img src="img/home/contact-form-bg.jpg" alt="contact-form-bg-img">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Menu -->
+      <div class="footer-menu f-d-2 f-m-3">
+        <ul class="footer-links">
+          <!-- Item -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggler demi-bold">
+              אודות
+              <img src="img/icons/plus-white.svg" alt="plus-icon" class="footer-plus d-mobile">
+            </a>
+            <ul class="dropdown-menu">
+              <!-- Item -->
+              <li>
+                <a href="#">?מי אנחנו</a>
+              </li>
+              <!-- Item -->
+              <li>
+                <a href="#"> יתרונות</a>
+              </li>
+              <!-- Item -->
+              <li>
+                <a href="#">מיחזור וסביבה</a>
+              </li>
+            </ul>
+          </li>
+          <!-- Item -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggler demi-bold">
+              שירותים שלנו
+              <img src="img/icons/plus-white.svg" alt="plus-icon" class="footer-plus d-mobile">
+            </a>
+            <ul class="dropdown-menu">
+              <!-- Item -->
+              <li>
+                <a href="#">שירותי קישור
+                </a>
+              </li>
+              <!-- Item -->
+              <li>
+                <a href="#">שירותי קישור
+                </a>
+              </li>
+              <!-- Item -->
+              <li>
+                <a href="#">שירותי קישור
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- Item -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggler demi-bold">
+              תרומה לקהילה
+              <img src="img/icons/plus-white.svg" alt="plus-icon" class="footer-plus d-mobile">
+            </a>
+            <ul class="dropdown-menu">
+              <!-- Item -->
+              <li>
+                <a href="#">קישור</a>
+              </li>
+              <!-- Item -->
+              <li>
+                <a href="#">קישור</a>
+              </li>
+              <!-- Item -->
+              <li>
+                <a href="#">קישור</a>
+              </li>
+            </ul>
+          </li>
+          <!-- Item -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggler demi-bold">
+              אירועים וחדשות
+              <img src="img/icons/plus-white.svg" alt="plus-icon" class="footer-plus d-mobile">
+            </a>
+            <ul class="dropdown-menu">
+              <!-- Item -->
+              <li>
+                <a href="#">קישור</a>
+              </li>
+              <!-- Item -->
+              <li>
+                <a href="#">קישור</a>
+              </li>
+              <!-- Item -->
+              <li>
+                <a href="#">קישור</a>
+              </li>
+            </ul>
+          </li>
+          <!-- Item -->
+          <li>
+            <a href="#" class="demi-bold">צור קשר</a>
+          </li>
+        </ul>
+        <ul class="footer-social">
+          <!-- Item -->
+          <li>
+            <a href="#"><img src="img/icons/whatsapp-white.svg" alt="whatsapp-icon"></a>
+          </li>
+          <!-- Item -->
+          <li>
+            <a href="#"><img src="img/icons/instagram-white.svg" alt="instagram-icon"></a>
+          </li>
+          <!-- Item -->
+          <li>
+            <a href="#"><img src="img/icons/facebook-white.svg" alt="facebook-icon"></a>
+          </li>
+        </ul>
+      </div>
+      <!-- Info -->
+      <div class="footer-info f-d-2 f-m-1">
+        <div class="footer-logo d-mobile">
+          <img src="img/icons/logo.jpg" alt="all-recycling-logo">
+        </div>
+        <p>AllRecycling© כל הזכויות שמורות ל</p>
+        <p>elevate digital studio | עיצוב ופיתוח</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script (Vendor) -->
+  <script src="js/swiper-bundle.min.js"></script>
+
   <!-- Script -->
   <script src="js/app.js"></script>
+  <script src="js/home.js"></script>
 
 </body>
 
