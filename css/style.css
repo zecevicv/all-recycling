@@ -237,6 +237,10 @@ h6 {
   text-align: center!important;
 }
 
+.text-gray {
+  color: #a7a7a7!important;
+}
+
 /* #Buttons & Links
 ================================================== */
 .btn {
