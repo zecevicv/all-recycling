@@ -1,10 +1,23 @@
-/* #Banner Slider
+/* #Solutions Slider
   ======================================================= */
-new Swiper('.banner-slider .swiper-container', {
+new Swiper('.services-certificates .swiper-container', {
   loop: true,
+  slidesPerView: 4,
   pagination: {
-    el: '.banner-slider .swiper-pagination',
+    el: '.services-certificates .swiper-pagination',
   },
+  navigation: {
+    nextEl: '.services-certificates .swiper-button-next',
+    prevEl: '.services-certificates .swiper-button-prev',
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    1024: {
+      slidesPerView: 4,
+    }
+  }
 });
 
 /* #Clients Slider
@@ -51,30 +64,8 @@ new Swiper('.blog-posts .swiper-container', {
   }
 });
 
-/* #Solutions Slider
-  ======================================================= */
-new Swiper('.home-solutions .swiper-container', {
-  loop: true,
-  slidesPerView: 3,
-  pagination: {
-    el: '.home-solutions .swiper-pagination',
-  },
-  navigation: {
-    nextEl: '.home-solutions .swiper-button-next',
-    prevEl: '.home-solutions .swiper-button-prev',
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    1024: {
-      slidesPerView: 3,
-    }
-  }
-});
-
 /* #Advantage Collapse
-  ======================================================= */
+======================================================= */
 const advantageCollapseTogglers = document.querySelectorAll('.advantage .collapse-toggler');
 
 advantageCollapseTogglers.forEach((collapse) => {
@@ -82,5 +73,16 @@ advantageCollapseTogglers.forEach((collapse) => {
     e.preventDefault();
     collapse.classList.toggle('active');
     collapse.parentNode.querySelector('.collapse').classList.toggle('active');
+  });
+});
+
+/* #FAQ'S Collapse
+  ======================================================= */
+const collapseTogglers = document.querySelectorAll('.services-faqs .collapse-toggler');
+
+collapseTogglers.forEach((toggler) => {
+  toggler.addEventListener('click', (e) => {
+    e.preventDefault();
+    toggler.closest('.faq').classList.toggle('active');
   });
 });

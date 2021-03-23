@@ -1,0 +1,342 @@
+/* #Plant
+================================================== */
+.services-plant {
+  padding: 7.3vw 0 5.2vw 0;
+}
+
+.services-plant .container {
+  max-width: 90%;
+}
+
+.services-plant .media-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 1vw;
+}
+
+.services-plant .media-block .img img {
+  width: 88%;
+  margin-top: -15%;
+}
+
+.services-plant .media-block h3 {
+  margin-bottom: 1vw;
+}
+
+.services-plant .container > p {
+  margin-bottom: 3vw;
+}
+
+@media (max-width: 1023.98px) {
+  .services-plant {
+    text-align: center;
+    padding: 14.6vw 0 18.6vw 0;
+  }
+
+  .services-plant .container {
+    max-width: 88%;
+  }
+
+  .services-plant .media-block {
+    grid-template-columns: 1fr;
+    margin-bottom: 6.6vw;
+    row-gap: 6.6vw;
+  }
+
+  .services-plant .media-block .img img {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .services-plant .media-block h3 {
+    margin-bottom: 2vw;
+  }
+  
+  .services-plant .container > p {
+    margin-bottom: 6.6vw;
+  }
+}
+
+/* #Certificates
+================================================== */
+.services-certificates {
+  padding: 3.125vw 0 4.6vw 0;
+}
+
+.services-certificates .container {
+  max-width: 76%;
+}
+
+.services-certificates h2 {
+  text-align: center;
+  margin-bottom: 2.6vw;
+}
+
+/* Swiper */
+.services-certificates .swiper {
+  overflow: hidden;
+  position: relative;
+}
+
+.services-certificates .swiper-container {
+  position: static;
+  max-width: 89%;
+  margin: 0 auto;
+  padding-bottom: 3vw;
+}
+
+.services-certificates .swiper-slide {
+  padding: 1vw 1.7vw;
+  text-align: center;
+}
+
+.services-certificates .swiper-slide > img {
+  height: 4.7vw;
+  width: 8.33vw;
+  object-fit: scale-down;
+  object-position: bottom;
+  margin: 0 auto 0.8vw auto;
+}
+
+.services-certificates .swiper-slide > h3 {
+  margin-bottom: 0.25vw;
+}
+
+.services-certificates .swiper-slide > p {
+  margin-bottom: 0.5vw;
+}
+
+.services-certificates .swiper-slide > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-certificates .swiper-slide > a img {
+  width: 0.9vw;
+}
+
+.services-certificates .swiper-pagination-bullet {
+  background: #E5E5E5;
+  opacity: 1;
+}
+
+.services-certificates .swiper-pagination {
+  bottom: 0;
+}
+
+.services-certificates .swiper-pagination-bullet-active {
+  background: var(--green);
+}
+
+.services-certificates .swiper-button-next, 
+.services-certificates .swiper-button-prev {
+  top: 14%;
+}
+
+@media (max-width: 1023.98px) {
+  .services-certificates {
+    padding: 12.6vw 0;
+    margin-bottom: 3vw;
+    box-shadow: 0 3px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .services-certificates .container {
+    max-width: 95%;
+  }
+  
+  .services-certificates h2 {
+    text-align: center;
+    margin-bottom: 6.6vw;
+  }
+
+  /* Swiper */
+  .services-certificates .swiper-container {
+    max-width: 73%;
+    padding-bottom: 12vw;
+  }
+
+  .services-certificates .swiper-slide {
+    padding: 3vw 5vw;
+  }
+
+  .services-certificates .swiper-slide > img {
+    height: 28vw;
+    width: 50vw;
+    object-position: center;
+    margin: 0 auto 2vw auto;
+  }
+  
+  .services-certificates .swiper-slide > h3 {
+    margin-bottom: 2.5vw;
+  }
+  
+  .services-certificates .swiper-slide > p {
+    margin-bottom: 2.5vw;
+  }
+  
+  .services-certificates .swiper-slide > a img {
+    width: 4vw;
+  }
+
+  .services-certificates .swiper-button-next, 
+  .services-certificates .swiper-button-prev {
+    top: 17%;
+  }
+}
+
+/* #FAQ's
+================================================== */
+.services-faqs {
+  padding: 6.25vw 0;
+  color: #242424;
+}
+
+.services-faqs .container {
+  max-width: 62%;
+}
+
+.services-faqs h2 {
+  text-align: center;
+  margin-bottom: 4.7vw;
+}
+
+.services-faqs .faqs {
+  margin-bottom: 3.125vw;
+}
+
+.services-faqs .faq {
+  border-radius: 1vw;
+  padding: 0 2vw;
+  box-shadow: 0 3px 24px rgba(0, 0, 0, 0.06);
+  position: relative;
+  overflow: hidden;
+}
+
+.services-faqs .faq::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0.83vw;
+  background-color: var(--green);
+}
+
+.services-faqs .faq:not(:last-child) {
+  margin-bottom: 1.3vw;
+}
+
+.services-faqs .faq .collapse-toggler {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vw 0;
+}
+
+.services-faqs .faq .collapse-toggler a {
+  display: flex;
+  align-items: center;
+  margin-right: 1vw;
+}
+
+.services-faqs .faq .collapse-toggler a img {
+  width: 0.75vw;
+  margin-right: .25vw;
+  margin-top: 0.2vw;
+}
+
+.services-faqs .faq.active .collapse-toggler a img {
+  transform: rotate(180deg);
+}
+
+.services-faqs .faq .close {
+  display: none;
+}
+
+.services-faqs .faq.active .close {
+  display: block;
+}
+
+.services-faqs .faq.active .open {
+  display: none;
+}
+
+.services-faqs .faq .open {
+  display: block;
+}
+
+.services-faqs .faq .collapse {
+  height: 0;
+  overflow: hidden;
+}
+
+.services-faqs .faq.active .collapse {
+  height: auto;
+  padding-bottom: 2vw;
+}
+
+.services-faqs .container > .text-center a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--green);
+}
+
+.services-faqs .container > .text-center a img {
+  width: 0.75vw;
+  margin-right: .25vw;
+  margin-top: 0.2vw;
+}
+
+@media (max-width: 1023.98px) {
+  .services-faqs {
+    padding: 13.3vw 0 20vw 0;
+  }
+
+  .services-faqs .container {
+    max-width: 88%;
+  }
+
+  .services-faqs h2 {
+    margin-bottom: 8vw;
+  }
+
+  .services-faqs .faqs {
+    margin-bottom: 8.66vw;
+  }
+
+  .services-faqs .faq .collapse-toggler a img,
+  .services-faqs .container > .text-center a img {
+    width: 2.75vw;
+    margin-right: 1.25vw;
+    margin-top: 0.5vw;
+  }
+
+  .services-faqs .faq {
+    border-radius: 2.66vw;
+    padding: 0 5.7vw 0 3.3vw;
+  }
+  
+  .services-faqs .faq::after {
+    width: 2.4vw;
+  }
+  
+  .services-faqs .faq:not(:last-child) {
+    margin-bottom: 4.4vw;
+  }
+
+  .services-faqs .faq .collapse-toggler {
+    flex-direction: column;
+    justify-content: center;
+    padding: 3.3vw 0;
+  }
+
+  .services-faqs .faq .collapse-toggler a {
+    margin-right: auto;
+    margin-top: 2vw;
+  }
+
+  .services-faqs .faq.active .collapse {
+    padding-bottom: 3.3vw;
+  }
+}
