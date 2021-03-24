@@ -1,0 +1,94 @@
+/* #Error
+================================================== */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-grow: 1;
+
+  background-image: url('../img/error/error.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.error h1 {
+  margin-bottom: 1.8vw;
+}
+
+.error h2 {
+  margin-bottom: 6.25vw;
+}
+
+.error .links ul {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+}
+
+.error .links ul li:not(:last-child) {
+  margin-left: 1.8vw;
+}
+
+.error .links ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.error .links ul li a span {
+  border-bottom: 1px solid white;
+  padding-bottom: .5vw;
+}
+
+.error .links img {
+  height: 3.9vw;
+  margin-bottom: 1vw;
+}
+
+@media (max-width: 1023.98px)  {
+  .error {
+    padding: 20vw 0;
+  }
+
+  .error h1 {
+    margin-bottom: 3.3vw;
+    max-width: 66%;
+  }
+  
+  .error h2 {
+    margin-bottom: 10.6vw;
+    max-width: 62%;
+  }
+
+  .error .links ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .error .links ul li a span {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .error .links img {
+    height: 16vw;
+    margin-bottom: 4vw;
+  }
+
+  .error .links ul li:not(:last-child) {
+    margin-left: 0;
+    margin-bottom: 12vw;
+  }
+}
