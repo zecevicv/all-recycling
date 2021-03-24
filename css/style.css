@@ -700,6 +700,10 @@ option {
     margin-left: 1vw;
   }
 
+  .header-links > ul > li > a:hover {
+    border-bottom: 2px solid transparent;
+  }
+
   .header-social ul {
     width: 42vw;
     display: flex;
@@ -898,8 +902,8 @@ option {
 
   .footer-menu {
     background-image: url('../img/global/footer-mobile.jpg');
-    background-size: cover;
-    background-position: top center;
+    background-size: 135vw auto;
+    background-position: top;
     background-repeat: no-repeat;
 
     flex-direction: column;
@@ -1474,6 +1478,8 @@ option {
 @media (max-width: 1023.98px) {
   .advantage {
     padding: 14vw 0 16.6vw 0;
+    background-size: 900vw auto;
+    background-position: top;
   }
 
   .advantage .container {
