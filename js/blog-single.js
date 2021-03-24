@@ -1,14 +1,14 @@
 /* #Blog Posts Slider
   ======================================================= */
-new Swiper('.blog-single-posts .swiper-container', {
+new Swiper('.blog-posts .swiper-container', {
   loop: true,
   slidesPerView: 3,
   pagination: {
-    el: '.blog-single-posts .swiper-pagination',
+    el: '.blog-posts .swiper-pagination',
   },
   navigation: {
-    nextEl: '.blog-single-posts .swiper-button-next',
-    prevEl: '.blog-single-posts .swiper-button-prev',
+    nextEl: '.blog-posts .swiper-button-next',
+    prevEl: '.blog-posts .swiper-button-prev',
   },
   breakpoints: {
     0: {
