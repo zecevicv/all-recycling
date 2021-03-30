@@ -1064,7 +1064,8 @@ option {
 }
 
 .banner .bg picture,
-.banner .bg img {
+.banner .bg img,
+.banner .bg video {
   width: 100%;
 }
 
