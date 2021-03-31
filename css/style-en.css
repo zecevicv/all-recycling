@@ -1091,7 +1091,7 @@ option {
 }
 
 .banner-sticky a:not(:last-child) {
-  margin-left: 3.15vw;
+  margin-right: 3.15vw;
 }
 
 @media (max-width: 1023.98px) {
