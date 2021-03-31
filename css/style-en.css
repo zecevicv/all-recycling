@@ -1029,6 +1029,7 @@ option {
   position: absolute;
   right: 1.5vw;
   top: 50%;
+  transform: translateY(-25%);
   z-index: 10;
   color: white;
 
